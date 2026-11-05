@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Create your SecureAuth account and protect your digital identity.">
+
+    <title>SecureAuth | Create Account</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <div class="logo">🔐 SecureAuth</div>
+
+            <h1>Create Account</h1>
+
+            <p class="subtitle">
+                Join SecureAuth and protect your digital identity.
+            </p>
+
+            <!-- Registration Form -->
+            <form id="registerForm">
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    minlength="2"
+                    maxlength="50"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    maxlength="254"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a strong password"
+                    minlength="8"
+                    maxlength="72"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <button type="submit" id="registerBtn">
+                    Create Account
+                </button>
+
+                <!-- Success / Error Message -->
+                <p
+                    id="message"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+            <p class="footer-text">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Authentication JavaScript -->
+    <script src="js/auth.js" defer></script>
+
+</body>
+
+</html>

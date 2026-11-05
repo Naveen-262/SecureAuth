@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAuth | Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>🔐 SecureAuth</h2>
+        <button id="logoutBtn">Logout ↗</button>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h1>Welcome, <span id="userName">User</span> 👋</h1>
+            <p>Manage your account and monitor your security.</p>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>👤 Account</h3>
+                <p id="profileName">Loading...</p>
+                <p id="profileEmail"></p>
+            </div>
+
+            <div class="card">
+                <h3>🛡️ Security Status</h3>
+                <p class="success">● Account Active</p>
+                <p>Password Protected</p>
+            </div>
+
+            <div class="card">
+                <h3>📅 Member Since</h3>
+                <p id="createdAt">Loading...</p>
+            </div>
+
+        </section>
+
+        <section class="activity">
+            <h2>Recent Activity</h2>
+
+            <div class="activity-item">
+                <span>🔐</span>
+                <div>
+                    <h4>Account Registration</h4>
+                    <p>Your SecureAuth account was created.</p>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <span>🛡️</span>
+                <div>
+                    <h4>Account Security</h4>
+                    <p>Your password is protected using bcrypt hashing.</p>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <span>🔑</span>
+                <div>
+                    <h4>Authentication</h4>
+                    <p>You are accessing a protected dashboard.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js" defer></script>
+</body>
+</html>
